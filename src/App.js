@@ -1,44 +1,18 @@
-import './App.css';
-import { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import AdminPage from './AdminPage';
+import StudentPage from './StudentPage';
+import IndexPage from './IndexPage';
 
-function App() {
-  const [username, pegarUsuario] = useState('');
-  const [password, pegarSenha] = useState('');
-
-  const logar = () => {
-    // Chamar função de validação e verificação aqui
-    console.log('Usuário:', username);
-    console.log('Senha:', password);
-    if (username == '') alert ('campo nome vazio')
-    if (password == '') alert ('campo senha vazio')
-    if (username == 'admin', password == 'admin') {
-      alert ('aministrador logado')
-    }else if (username == 'aluno', password == 'aluno') {
-      alert ('aluno logado')
-    }else {
-      alert ('usuário não existente')
-    }
-    // Você pode chamar a função de validação e verificação aqui e fazer o que for necessário com o resultado
-  };
-
+function Main() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <title>Uniview</title>
-      </header>
-
-      <body className='gradient-body'>
-        <div className="login-container">
-          <h1 className="login-title">Acessar</h1>
-          <input type="text" placeholder="Nome" value={username} onChange={(e) => pegarUsuario(e.target.value)} />
-
-          <input type="password" placeholder="Senha" value={password} onChange={(e) => pegarSenha(e.target.value)} />
-
-          <button onClick={logar}>Enviar</button>
-        </div>
-      </body>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/admin" element={<AdminPage />} />
+        <Route path="/aluno" element={<StudentPage />} />
+        <Route path="/" element={<IndexPage />} />
+      </Routes>
+    </Router>
   );
 }
 
-export default App;
+export default Main;
