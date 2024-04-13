@@ -1,0 +1,97 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+
+/* Reset de margens e preenchimentos para garantir consistência entre os navegadores */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* Estilos para o corpo da página */
+body {   
+  font-family: Arial, Helvetica, sans-serif;   
+  /* background-image: linear-gradient(45deg, rgb(255, 251, 0), rgb(241, 157, 0));  */
+}
+
+/* Estilos para o container do formulário de login */
+.login-container {
+  background-color: rgba(24, 185, 2, 0.9);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 60px;
+  border-radius: 15px;
+  color: rgb(255, 255, 255);
+}
+
+.login-title {
+  padding-bottom: 1rem ;
+  padding-top: 1rem;
+}
+
+/* Estilos para as entradas de texto */
+input[type="text"],
+input[type="password"] {
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  /*margin-bottom: 10px;  Adicionando um pequeno espaço entre as entradas */
+  margin-bottom: 1.0rem;
+}
+
+/* Estilos para o botão */
+button {
+  background-color: rgb(238, 222, 6);
+  border: none;
+  padding: 10px;
+  width: 50%;
+  border-radius: 10px;
+  color: rgb(85, 83, 83);
+  font-size: 15px;
+}
+
+/* Estilos para o botão quando hover */
+button:hover {
+  background-color: rgb(252, 193, 0);
+  cursor: pointer;
+}
