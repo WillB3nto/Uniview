@@ -1,0 +1,50 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {   
+  background-color: white;
+}
+
+.cabecalho {
+  min-height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Isso faz com que os elementos sejam espaçados uniformemente, colocando-os em extremidades opostas */
+  padding: 10px; /* Espaçamento interno do cabeçalho */
+  /* background-color: #333; */
+  border-bottom: 1px solid black; /* Você pode ajustar a cor, largura e estilo da linha conforme necessário */
+}
+
+.cabecalho .logo {
+  background-color: blue;
+  max-width: 30%;
+  /* padding: 2rem; */
+  margin: 2rem;
+  min-width: 150px;
+  min-height: 50px;
+}
+
+.cabecalho .logo button {
+  height: 100%;
+  width: 100%;
+}
+
+.cabecalho .settings {
+  background-color: red;
+  max-width: 30%;
+  /* padding: 2rem; */
+  margin: 2rem;
+  min-width: 150px;
+  min-height: 50px;
+}
+
+.cabecalho .settings button {
+  height: 100%;
+  width: 100%;
+}
