@@ -27,9 +27,9 @@ function ProfessoresModal({ open, onClose }) {
       <Box sx={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: 400, bgcolor: 'background.paper', boxShadow: 24, p: 4 }}>
         <h2 id="modal-modal-title">Cadastro de Professor</h2>
         <form onSubmit={handleSubmit}>
-          <TextField id="outlined-basic" label="Nome" variant="outlined" fullWidth margin="normal" />
-          <TextField id="outlined-basic" label="E-mail" type="email" variant="outlined" fullWidth margin="normal" />
-          <TextField id="outlined-basic" label="Telefone" type="tel" variant="outlined" fullWidth margin="normal" />
+          <TextField id="nome" label="Nome" variant="outlined" fullWidth margin="normal" />
+          <TextField id="email" label="E-mail" type="email" variant="outlined" fullWidth margin="normal" />
+          <TextField id="telefone" label="Telefone" type="tel" variant="outlined" fullWidth margin="normal" />
           <Button type="submit" variant="contained" color="primary" fullWidth>
             Cadastrar
           </Button>
