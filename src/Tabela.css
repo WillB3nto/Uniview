@@ -1,0 +1,12 @@
+    .conteudo .right .search {
+      justify-content: space-between;
+      display: flex;
+      margin-bottom: 10px;
+    }
+  
+    .conteudo .right .search button {
+      height: 50%;
+      width: auto;
+      padding: 15px;
+
+    }

@@ -12,22 +12,22 @@ function MenuEsquerdo() {
                 <nav aria-label="secondary mailbox folders">
                     <List>
                         <ListItem disablePadding>
-                        <ListItemButton component={Link} to="/admin?disciplinas">
+                        <ListItemButton component={Link} to="/admin?tipo=disciplinas">
                             <ListItemText primary="Disciplinas" />
                         </ListItemButton>
                         </ListItem>
                         <ListItem disablePadding>
-                        <ListItemButton component={Link} to="/admin?turmas">
+                        <ListItemButton component={Link} to="/admin?tipo=turmas">
                             <ListItemText primary="Turmas" />
                         </ListItemButton>
                         </ListItem>
                         <ListItem disablePadding>
-                        <ListItemButton component={Link} to="/admin?professores">
+                        <ListItemButton component={Link} to="/admin?tipo=professores">
                             <ListItemText primary="Professores" />
                         </ListItemButton>
                         </ListItem>
                         <ListItem disablePadding>
-                        <ListItemButton component={Link} to="/admin?alunos">
+                        <ListItemButton component={Link} to="/admin?tipo=alunos">
                             <ListItemText primary="Alunos" />
                         </ListItemButton>
                         </ListItem>

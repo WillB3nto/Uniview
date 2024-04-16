@@ -43,13 +43,3 @@
       flex-direction: column;
       padding: 2rem;
     }
-  
-    .conteudo .right .search {
-      justify-content: space-between;
-      display: flex;
-    }
-  
-    .conteudo .right .search button {
-      height: 100%;
-      width: 20%;
-    }
