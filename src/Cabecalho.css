@@ -1,0 +1,36 @@
+.cabecalho {
+  min-height: 150px;
+  max-height: 150px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+
+  .cabecalho .logo {
+    max-width: 30%;
+    margin: 2rem;
+    min-width: 150px;
+    min-height: 50px;
+  }
+
+  .cabecalho .logo button {
+    height: 100%;
+    width: 100%;
+  }
+
+  .cabecalho .settings {
+    max-width: 30%;
+    margin: 2rem;
+    min-width: 150px;
+    min-height: 50px;
+  }
+
+  .cabecalho .settings button {
+    height: 100%;
+    width: 100%;
+  }
